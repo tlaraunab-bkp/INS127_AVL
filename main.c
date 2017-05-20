@@ -2,6 +2,8 @@
 #include "util.h"
 #include "NodoArbolAVL.h"
 
+void insertaEnAVL(NodoArbolAVL**, int);
+
 int main(int argc, char **argv)
 {
 	NodoArbolAVL* raiz = NULL;
