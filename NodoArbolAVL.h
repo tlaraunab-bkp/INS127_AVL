@@ -94,10 +94,11 @@ NodoArbolAVL* insertarAVL(NodoArbolAVL* raiz, NodoArbolAVL* n){
 }
 
 void preordenAVL(NodoArbolAVL* raiz){
+    int FE;
     if(raiz != NULL){
-        printf("(Dato = %d, FE = %d)\n",raiz->dato, raiz->FE);
+        FE = getAltura(raiz->izq) - getAltura(raiz->der);
+        printf("(Dato = %d, Altura = %d, FE =%d)\n",raiz->dato, raiz->altura, FE);
         preordenAVL(raiz->izq);
-        
         preordenAVL(raiz->der);
     }
 }
